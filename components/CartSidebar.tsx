@@ -18,7 +18,7 @@ const getStripe = () => {
 const getImagePath = (imageIdentifier: string): string => {
   if (!imageIdentifier) return '/placeholder.jpg';
   const baseName = imageIdentifier.startsWith('/') ? imageIdentifier : `/${imageIdentifier}`;
-  let fullPath = `/${baseName}`;
+  let fullPath = `${baseName}`;
   if (/\.(jpeg|jpg|gif|png|webp)$/i.test(baseName)) {
     return fullPath;
   }
