@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useCart } from '../src/context/CartContext'; // Corrected Path
+import { useCart } from '../src/context/CartContext';
 import { CartItem } from '../types';
 import { loadStripe, Stripe } from '@stripe/stripe-js';
 
@@ -39,6 +39,9 @@ const CartSidebar: React.FC = () => {
 
   const totalItems = getTotalItemsInCart();
 
+  // ===========================
+  // UPDATED: Checkout handler
+  // ===========================
   const handleCheckout = async () => {
     setIsLoadingCheckout(true);
     setCheckoutError(null);
@@ -49,47 +52,37 @@ const CartSidebar: React.FC = () => {
       return;
     }
 
-    const stripe = await getStripe();
-    if (!stripe) {
-      setCheckoutError('Stripe.js failed to load. Please try again.');
-      setIsLoadingCheckout(false);
-      return;
-    }
-
-    const subtotal = getCartSubtotal();
-
-    const lineItems = [
-      {
-        price_data: {
-          currency: 'usd',
-          product_data: {
-            name: 'Your Total Order', // Simplified name
-            description: 'Payment for items from 83 West Watches', // Generic description
-            images: [`${window.location.origin}/83Westv2.png`], // Store logo
-          },
-          unit_amount: Math.round(subtotal * 100), // Total amount in cents
-        },
-        quantity: 1,
-      },
-    ];
-
     try {
-      // IMPORTANT: Replace with your actual success and cancel URLs
-      // These URLs should correspond to routes in your HashRouter if you want to handle them client-side
-      // e.g., successUrl: `${window.location.origin}/#/checkout-success?session_id={CHECKOUT_SESSION_ID}`
-      // e.g., cancelUrl: `${window.location.origin}/#/shop` (or wherever you want them to go)
-      const { error } = await stripe.redirectToCheckout({
-        lineItems,
-        mode: 'payment',
-        successUrl: `${window.location.origin}/#/checkout-success?session_id={CHECKOUT_SESSION_ID}`,
-        cancelUrl: `${window.location.origin}/#/cart-cancelled`, // Or perhaps back to the shop or cart view
+      // 1. POST cart items to your backend to create a Stripe session
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ cartItems }),
       });
 
-      if (error) {
-        console.error('Stripe redirectToCheckout error:', error);
-        setCheckoutError(error.message || 'An unexpected error occurred during checkout.');
+      if (!response.ok) {
+        const err = await response.json();
+        setCheckoutError(err.error || 'Failed to create checkout session.');
+        setIsLoadingCheckout(false);
+        return;
       }
-      // If redirectToCheckout is successful, the user will be redirected.
+
+      const { sessionId } = await response.json();
+
+      // 2. Redirect to Stripe Checkout
+      const stripe = await getStripe();
+      if (!stripe) {
+        setCheckoutError('Stripe.js failed to load. Please try again.');
+        setIsLoadingCheckout(false);
+        return;
+      }
+
+      const { error } = await stripe.redirectToCheckout({ sessionId });
+      if (error) {
+        setCheckoutError(error.message || 'An error occurred during checkout.');
+      }
     } catch (error) {
       console.error('Error in handleCheckout:', error);
       if (error instanceof Error) {

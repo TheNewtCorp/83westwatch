@@ -39,6 +39,6 @@ export default async (req: any, res: any) => {
     res.status(200).json({ sessionId: session.id });
   } catch (error: any) {
     console.error('[Stripe Checkout Error]', error);
-    res.status(400).json({ error: error.message });
+    res.status(400).json({ error: error.message || 'Something went wrong' });
   }
 };
