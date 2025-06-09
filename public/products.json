@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "name": "Zenith Defy El Primero Extreme",
+    "model": "97.9100.9004/02.i001",
+    "price": 13500,
+    "images": [
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3715",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3716",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3718",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3724",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3735",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3739",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3742",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3749",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3755",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3869",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3872",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3873",
+      "/product-images/zenith-defy-el-primero-titanium/DSC_3881"
+    ],
+    "description": "This is Zenith's Defy Extreme in full matte titanium — the chronograph of the 21st century. It's powered by the legendary El Primero 9004 movement, capable of measuring time down to 1/100th of a second. You'll notice the chronograph hand makes a full sweep around the dial every second — that's thanks to the dual escapements, one for timekeeping and one dedicated entirely to the chronograph.\n\nThe case is 45mm and made entirely of brushed titanium, so while it wears bold on the wrist, it's much lighter than it looks. One of the standout features is the true skeleton dial — you can literally see straight through the movement and out the other side. The openworked design gives you a full view of the mechanics in action, and it's covered by a sapphire crystal on both the front and back.\n\nThis particular piece is a full set, including the original box, papers, extra links and all documentation. It shows little to no signs of wear and is in excellent condition throughout. It's also still under Zenith factory warranty, offering peace of mind alongside its standout looks and performance.\n\nThe watch includes Zenith's quick-change strap system and comes on its original titanium bracelet. Rubber and Velcro strap options are available and have never been worn, in case you want to switch things up.\n\nWe offer fully insured overnight shipping out of south florida, so you will get this beautiful one of a kind piece quickly and efficiently.\n\nA bold choice for someone who appreciates modern engineering, openworked design, and a chronograph that doesn't hold anything back.\n\nIf you have any questions, please don't hesitate to reach out. Thanks for looking.",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Omega Speedmaster Blue Panda",
+    "model": "329.30.43.51.03.001",
+    "price": 7200,
+    "images": [
+      "/product-images/omega-speedmaster-blue-panda/DSC_1897.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_1924.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_1926.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_1976.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_3688.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_3693.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_3730.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_3877.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_3879.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_3936.jpg",
+      "/product-images/omega-speedmaster-blue-panda/DSC_3942.jpg"
+    ],
+    "description": "The Speedmaster Chronoscope blends vintage-inspired design with modern mechanical performance — and this particular reference, with its rich blue dial and polished steel case, wears especially well in more refined settings. It's one of the few Speedmasters that feels just as appropriate under a suit cuff as it does on a casual weekend.\n\nAt 43mm, the case has a presence, but the slim profile and beautifully tapered lugs give it a sleek, tailored feel. The sunburst blue dial is really the star here — deep and dynamic in the light, with a vintage-style printed triple-scale layout: tachymeter, telemeter, and pulsometer. It's a throwback to classic chronographs of the 1940s, brought into the modern age with Omega's clean execution and attention to detail.\n\nInside, you've got the Omega Co-Axial Master Chronometer Caliber 9908, a hand-wound movement with a column wheel chronograph, METAS certification, and anti-magnetic protection. It's finished with Geneva waves in arabesque and fully visible through the sapphire caseback. Power reserve is 60 hours.\n\nThis watch is a full set, including the original box, warranty card, instruction manual, and pictogram card. It shows very minimal signs of wear and is in excellent condition throughout. Still under Omega factory warranty.\n\nFully insured, overnight shipping out of south florida so you get your timepiece quickly and safely.\n\nIf you're looking for a chronograph that bridges sporty and dressy — something you can wear to meetings, formal dinners, or black-tie events without compromising on mechanical substance — the Chronoscope fits the bill beautifully.",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Audemars Piguet Royal Oak Chronograph",
+    "model": "26331BA.OO.1220BA.01",
+    "price": 98000,
+    "images": ["/product-images/audemars-piguet-royal-oak-chronograph/DSC_1316.jpg"],
+    "description": "An iconic timepiece, the Audemars Piguet Royal Oak Chronograph in stunning yellow gold. This model features the signature 'Grande Tapisserie' pattern on its blue dial, complemented by yellow gold hour-markers and Royal Oak hands with luminescent coating. The 41mm case houses a selfwinding chronograph movement, Calibre 2385, offering a 40-hour power reserve. A true statement of luxury and horological excellence, this watch is presented in excellent condition with its original box and papers. Ideal for collectors and enthusiasts seeking a blend of sporty elegance and precious materials.",
+    "available": true
+  }
+]

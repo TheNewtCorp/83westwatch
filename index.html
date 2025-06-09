@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/public/83Westv2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>83 West Watches</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+      /* Custom font setup if needed, or ensure fonts are web-safe/loaded */
+      body {
+        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+        background-image: url('/public/mainpage.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgba(255, 255, 255, 0.87);
+        overflow-x: hidden; /* Applied globally */
+      }
+      /* Specific Tailwind overrides or very custom global styles can go here if absolutely necessary */
+      /* For example, ensuring the Georgia font is available if used in Tailwind like font-['Georgia',_serif] */
+      @import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap'); /* Example for Georgia */
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "framer-motion": "https://esm.sh/framer-motion@11.0.8",
+          "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+          "@stripe/stripe-js": "https://esm.sh/@stripe/stripe-js@3"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="bg-black">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
