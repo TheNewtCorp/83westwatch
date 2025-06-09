@@ -19,7 +19,7 @@ const ShopPage: React.FC = () => {
   const getImagePath = (imageIdentifier: string): string => {
     // Ensure the identifier from products.json (e.g., "/DSC_3715") is correctly formed.
     const baseName = imageIdentifier.startsWith('/') ? imageIdentifier : `/${imageIdentifier}`;
-    let fullPath = `/public${baseName}`;
+    let fullPath = `/${baseName}`;
 
     // Check if the identifier already includes a common image extension.
     if (/\.(jpeg|jpg|gif|png|webp)$/i.test(baseName)) {
@@ -36,7 +36,7 @@ const ShopPage: React.FC = () => {
       setIsLoading(true);
       setError(null);
       try {
-        const response = await fetch('/public/products.json'); // Fetch from /public directory
+        const response = await fetch('/products.json'); // Fetch from /public directory
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

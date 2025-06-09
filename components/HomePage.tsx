@@ -37,7 +37,7 @@ const HomePage: React.FC<HomePageProps> = ({ performSmoothNavigation }) => {
       {/* Hero watch image */}
       <div className='h-[40vh] text-center relative w-full aspect-[4/1] min-h-[320px] overflow-visible max-w-[2000px] mx-auto flex justify-center items-center'>
         <img
-          src={'/public/DSC_1425.png'}
+          src={'/DSC_1425.png'}
           alt='Luxury Watch Hero'
           className='w-auto h-[90%] relative object-contain filter brightness-90'
           draggable={false}
@@ -53,7 +53,7 @@ const HomePage: React.FC<HomePageProps> = ({ performSmoothNavigation }) => {
           {/* Product Card 1 */}
           <div className='bg-transparent p-0 text-center w-[260px]'>
             <img
-              src={'/public/product-images/zenith-defy-el-primero-titanium/DSC_3715.jpg'}
+              src={'/product-images/zenith-defy-el-primero-titanium/DSC_3715.jpg'}
               alt='Zenith Defy El Primero Extreme'
               className='w-full max-w-[260px] aspect-square object-cover rounded-md mb-5 mx-auto shadow-lg'
             />
@@ -64,7 +64,7 @@ const HomePage: React.FC<HomePageProps> = ({ performSmoothNavigation }) => {
           {/* Product Card 2 */}
           <div className='bg-transparent p-0 text-center w-[260px]'>
             <img
-              src={'/public/product-images/omega-speedmaster-blue-panda/DSC_1897.jpg'}
+              src={'/product-images/omega-speedmaster-blue-panda/DSC_1897.jpg'}
               alt='Omega Speedmaster Blue Panda'
               className='w-full max-w-[260px] aspect-square object-cover rounded-md mb-5 mx-auto shadow-lg'
             />
@@ -75,7 +75,7 @@ const HomePage: React.FC<HomePageProps> = ({ performSmoothNavigation }) => {
           {/* Product Card 3 */}
           <div className='bg-transparent p-0 text-center w-[260px]'>
             <img
-              src={'/public/product-images/audemars-piguet-royal-oak-chronograph/DSC_1316.jpg'}
+              src={'/product-images/audemars-piguet-royal-oak-chronograph/DSC_1316.jpg'}
               alt='Audemars Piguet Royal'
               className='w-full max-w-[260px] aspect-square object-cover rounded-md mb-5 mx-auto shadow-lg'
             />
@@ -107,7 +107,7 @@ const HomePage: React.FC<HomePageProps> = ({ performSmoothNavigation }) => {
           </div>
           <div className='max-w-[260px] w-full'>
             <img
-              src={'/public/DSC_1487.jpg'}
+              src={'/DSC_1487.jpg'}
               alt='How it works watch'
               className='w-full rounded-lg filter brightness-95 shadow-lg'
             />
@@ -123,7 +123,7 @@ const HomePage: React.FC<HomePageProps> = ({ performSmoothNavigation }) => {
         <div className='flex flex-col md:flex-row items-center justify-center max-w-3xl mx-auto gap-10 md:gap-7 px-4'>
           <div className=''>
             <img
-              src={'/public/expert.jpg'}
+              src={'/expert.jpg'}
               alt='Expert'
               className='w-[175px] h-[175px] object-cover rounded-full block mx-auto shadow-[0_2px_24px_0_rgba(0,0,0,0.375)]'
             />

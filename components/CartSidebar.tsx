@@ -16,9 +16,9 @@ const getStripe = () => {
 };
 
 const getImagePath = (imageIdentifier: string): string => {
-  if (!imageIdentifier) return '/public/placeholder.jpg';
+  if (!imageIdentifier) return '/placeholder.jpg';
   const baseName = imageIdentifier.startsWith('/') ? imageIdentifier : `/${imageIdentifier}`;
-  let fullPath = `/public${baseName}`;
+  let fullPath = `/${baseName}`;
   if (/\.(jpeg|jpg|gif|png|webp)$/i.test(baseName)) {
     return fullPath;
   }
@@ -65,7 +65,7 @@ const CartSidebar: React.FC = () => {
           product_data: {
             name: 'Your Total Order', // Simplified name
             description: 'Payment for items from 83 West Watches', // Generic description
-            images: [`${window.location.origin}/public/83Westv2.png`], // Store logo
+            images: [`${window.location.origin}/83Westv2.png`], // Store logo
           },
           unit_amount: Math.round(subtotal * 100), // Total amount in cents
         },
