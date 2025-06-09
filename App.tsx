@@ -77,13 +77,13 @@ const AnimatedApp: React.FC = () => {
   const getAssetsForPath = useCallback(async (path: string): Promise<string[]> => {
     if (path === '/') {
       return [
-        '@/DSC_1425.png',
-        '@/DSC_3715.jpg',
-        '@/DSC_3685.jpg',
-        '@/DSC_1316.jpg',
-        '@/DSC_1487.jpg',
-        '@/expert.jpg',
-        '@/youtube-icon.svg',
+        '/DSC_1425.png',
+        '/DSC_3715.jpg',
+        '/DSC_3685.jpg',
+        '/DSC_1316.jpg',
+        '/DSC_1487.jpg',
+        '/expert.jpg',
+        '/youtube-icon.svg',
       ].filter(Boolean);
     }
     if (path === '/shop') {
@@ -164,7 +164,7 @@ const AnimatedApp: React.FC = () => {
             onClick={() => setOpened(true)}
           >
             <img
-              src='@/83Westv2.png'
+              src='/83Westv2.png'
               alt='83 West Watches Logo'
               className='w-auto h-auto max-w-[80vw] sm:max-w-[60vw] md:max-w-[50vw] max-h-[70vh] object-contain will-change-filter transition-filter duration-300 hover:drop-shadow-[0_0_2em_#bca68e]'
             />
