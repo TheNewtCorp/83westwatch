@@ -24,7 +24,6 @@ export const handler = async (event: any) => {
         currency: 'usd',
         product_data: {
           name: item.name,
-          images: item.images?.length ? [item.images[0]] : undefined,
         },
         unit_amount: Math.round(item.price * 100),
       },
