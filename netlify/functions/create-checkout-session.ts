@@ -4,7 +4,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: '2025-05-28.basil',
 });
 
-export const handler = async (event: any, context: any) => {
+export const handler = async (event: any) => {
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
