@@ -237,7 +237,9 @@ const SellPage: React.FC = () => {
           <button
             type='submit'
             className='w-full bg-[#B49857] text-black font-semibold py-3 px-6 rounded-md hover:bg-[#a89174] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center'
-          ></button>
+          >
+            Submit For Appraisal
+          </button>
         </div>
       </form>
       <p className='text-xs text-gray-500 mt-6 text-center'>

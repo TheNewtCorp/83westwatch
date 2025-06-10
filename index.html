@@ -38,6 +38,21 @@
   </head>
   <body class="bg-black">
     <div id="root"></div>
+    <!-- Netlify hidden form for build-time detection -->
+    <form name="sell-request" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="sell-request" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="watchBrandModel" />
+      <input type="text" name="referenceNumber" />
+      <input type="text" name="condition" />
+      <input type="text" name="includes" />
+      <input type="text" name="serviceHistory" />
+      <textarea name="description"></textarea>
+      <input type="file" name="watchImages" multiple />
+      <input name="bot-field" />
+    </form>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
