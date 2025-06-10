@@ -51,37 +51,43 @@ const HomePage: React.FC<HomePageProps> = ({ performSmoothNavigation }) => {
         </h2>
         <div className='flex flex-wrap justify-center gap-12 mb-10 px-4'>
           {/* Product Card 1 */}
-          <div className='bg-transparent p-0 text-center w-[260px]'>
+          <div className='bg-transparent p-0 text-center w-[260px]' onClick={() => performSmoothNavigation('/shop')}>
             <img
               src={'/product-images/zenith-defy-el-primero-titanium/DSC_3715.jpg'}
               alt='Zenith Defy El Primero Extreme'
               className='w-full max-w-[260px] aspect-square object-cover rounded-md mb-5 mx-auto shadow-lg'
             />
-            <div className='text-white text-lg font-["Georgia",_serif] mb-1'>Zenith Defy El Primero Extreme</div>
-            <div className='text-gray-400 text-base mb-3'>97.9100.9004/02.i001</div>
-            <div className='text-white text-xl font-medium'>$13,500</div>
+            <div className='text-white text-lg font-["Georgia",_serif] mb-1 hover:text-[#bca68e]'>
+              Zenith Defy El Primero Extreme
+            </div>
+            <div className='text-gray-400 text-base mb-3 hover:text-[#bca68e]'>97.9100.9004/02.i001</div>
+            <div className='text-white text-xl font-medium hover:text-[#bca68e]'>$13,500</div>
           </div>
           {/* Product Card 2 */}
-          <div className='bg-transparent p-0 text-center w-[260px]'>
+          <div className='bg-transparent p-0 text-center w-[260px]' onClick={() => performSmoothNavigation('/shop')}>
             <img
               src={'/product-images/omega-speedmaster-blue-panda/DSC_1897.jpg'}
               alt='Omega Speedmaster Blue Panda'
               className='w-full max-w-[260px] aspect-square object-cover rounded-md mb-5 mx-auto shadow-lg'
             />
-            <div className='text-white text-lg font-["Georgia",_serif] mb-1'>Omega Speedmaster Blue Panda</div>
-            <div className='text-gray-400 text-base mb-3'>329.30.43.51.03.001</div>
-            <div className='text-white text-xl font-medium'>$7,200</div>
+            <div className='text-white text-lg font-["Georgia",_serif] mb-1 hover:text-[#bca68e]'>
+              Omega Speedmaster Blue Panda
+            </div>
+            <div className='text-gray-400 text-base mb-3 hover:text-[#bca68e]'>329.30.43.51.03.001</div>
+            <div className='text-white text-xl font-medium hover:text-[#bca68e]'>$7,200</div>
           </div>
           {/* Product Card 3 */}
-          <div className='bg-transparent p-0 text-center w-[260px]'>
+          <div className='bg-transparent p-0 text-center w-[260px]' onClick={() => performSmoothNavigation('/shop')}>
             <img
               src={'/product-images/audemars-piguet-royal-oak-chronograph/DSC_1316.jpg'}
               alt='Audemars Piguet Royal'
               className='w-full max-w-[260px] aspect-square object-cover rounded-md mb-5 mx-auto shadow-lg'
             />
-            <div className='text-white text-lg font-["Georgia",_serif] mb-1'>Audemars Piguet Royal</div>
-            <div className='text-gray-400 text-base mb-3'>26331BA.OO.1220BA.01</div>
-            <div className='text-white text-xl font-medium'>$98,000</div>
+            <div className='text-white text-lg font-["Georgia",_serif] mb-1 hover:text-[#bca68e]'>
+              Audemars Piguet Royal
+            </div>
+            <div className='text-gray-400 text-base mb-3 hover:text-[#bca68e]'>26331BA.OO.1220BA.01</div>
+            <div className='text-white text-xl font-medium hover:text-[#bca68e]'>$98,000</div>
           </div>
         </div>
         <button

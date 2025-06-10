@@ -137,7 +137,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
             <motion.div layoutId={`price-${product.id}`} className='font-bold text-3xl text-[#bca68e] mb-4'>
               ${product.price.toLocaleString()}
             </motion.div>
-            <div className='prose prose-sm prose-invert text-gray-300 max-w-none overflow-y-auto flex-grow mb-4 scrollbar-thin scrollbar-thumb-[#bca68e]/50 scrollbar-track-transparent pr-2'>
+            <div className='prose prose-sm prose-invert text-gray-300 max-w-none overflow-y-auto flex-grow mb-4 scrollbar-thin scrollbar-thumb-[#bca68e]/50 scrollbar-track-transparent pr-2 min-h-[180px] md:min-h-0'>
               <p dangerouslySetInnerHTML={{ __html: product.description.replace(/\n/g, '<br />') }} />
             </div>
             <button

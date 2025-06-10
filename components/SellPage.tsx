@@ -108,7 +108,22 @@ const SellPage: React.FC = () => {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className='space-y-6'>
+      <form
+        name='sell-request'
+        method='POST'
+        data-netlify='true'
+        data-netlify-honeypot='bot-field'
+        encType='multipart/form-data'
+        className='space-y-6'
+      >
+        {/* Netlify: Hidden input for form name */}
+        <input type='hidden' name='form-name' value='sell-request' />
+        {/* Honeypot field (hidden from humans) */}
+        <p className='hidden'>
+          <label>
+            <input name='bot-field' />
+          </label>
+        </p>
         <div>
           <label htmlFor='name' className={labelBaseClasses}>
             Your Name <span className='text-red-500'>*</span>
